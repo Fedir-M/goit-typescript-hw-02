@@ -4,7 +4,7 @@
 */
 
 function merge<T extends object, U extends object>(objA: T, objB: U): T & U {
-  return Object.assign(objA, objB) as T & U; //? а якщо замість (: T & U) написати (: any) наскільки це буде корректно? )))
+  return Object.assign(objA, objB);
 }
 
 export {};
